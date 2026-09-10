@@ -1,0 +1,516 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanoch Automations Pvt Ltd - Intelligent Industrial Automation</title>
+    <meta name="description"
+        content="HANOCH Automations Pvt Ltd - Leading industrial automation company in Kochi, Kerala. Special Purpose Machines, Marine Automation, Industrial IoT, Robotics Integration.">
+    <link rel="icon" type="image/svg+xml" href="svg/white-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- VanillaTilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <!-- Site Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Scroll progress bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Cursor glow -->
+    <div id="cg"></div>
+    <!-- Particle canvas -->
+    <canvas id="pc"></canvas>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav id="nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="ni">
+                <a href="https://www.hanoch.in/" class="nl" aria-label="Hanoch Automations Home">
+                    <img src="svg/black-logo.svg" alt="Hanoch Automations Logo" class="nav-logo">
+                </a>
+                <ul class="nm">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li class="nd">
+                        <a href="https://www.hanoch.in/service">Services <i class="fas fa-angle-down"
+                                style="font-size:.7em;margin-left:4px"></i></a>
+                        <ul class="ndm">
+                            <li><a href="https://www.hanoch.in/service-details">Special Purpose Machines</a></li>
+                            <li><a href="https://www.hanoch.in/service-details2">Marine Automation</a></li>
+                            <li><a href="https://www.hanoch.in/service-carousel">Hanoch Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#proj">Projects</a></li>
+                    <li><a href="https://www.hanoch.in/contact" class="btn-nav">Get A Quote &nbsp;<i
+                                class="fas fa-arrow-right-long"></i></a></li>
+                </ul>
+                <div class="hb" id="hbtn" tabindex="0" role="button" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <nav class="mnav" id="mnav" aria-label="Mobile navigation">
+        <a href="#hero" class="ml">Home</a>
+        <a href="#about" class="ml">About</a>
+        <a href="https://www.hanoch.in/service" class="ml">Services</a>
+        <a href="#proj" class="ml">Projects</a>
+        <a href="https://www.hanoch.in/contact" class="ml">Contact</a>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero">
+        <div class="hbg"></div>
+        <div class="hgrid"></div>
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+        <div class="container">
+            <div class="hero-inner">
+
+                <!-- Left: text -->
+                <div class="hcw">
+                    <div class="hey" id="hey">
+                        <div class="dot"></div>
+                        HANOCH AUTOMATIONS PVT LTD
+                    </div>
+                    <h1 class="ht" id="ht">
+                        Engineering <em>Intelligent Automation</em> for Advanced Industries
+                    </h1>
+                    <p class="hsub" id="hsub">
+                        From Special Purpose Machines and Industrial IoT to Marine Automation &mdash;
+                        precision-engineered solutions tailored for advanced manufacturing and maritime industries.
+                    </p>
+                    <div class="htags" id="htags">
+                        <span class="htag">Industrial Automation</span>
+                        <span class="htag">Smart Manufacturing</span>
+                        <span class="htag">Industrial IoT</span>
+                        <span class="htag">Marine Automation</span>
+                    </div>
+                    <div class="hcta" id="hcta">
+                        <a href="https://www.hanoch.in/contact" class="btn-p">Get A Quote <i
+                                class="fas fa-arrow-right-long"></i></a>
+                        <a href="#services" class="btn-o">Explore Services <i class="fas fa-chevron-down"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right: 3D image card -->
+                <div class="hv" id="hv">
+                    <div class="h3c" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare
+                        data-tilt-max-glare="0.12">
+                        <img src="img/machine1.png" alt="Industrial automation machinery at Hanoch Automations">
+                        <!-- Floating stat badges -->
+                        <div class="hstat str">
+                            <div class="hsi"><i class="fas fa-industry"></i></div>
+                            <div>
+                                <div class="hslb">Machines Delivered</div>
+                                <div class="hslv">250+</div>
+                            </div>
+                        </div>
+                        <div class="hstat sbl">
+                            <div class="hsi"><i class="fas fa-award"></i></div>
+                            <div>
+                                <div class="hslb">Years of Expertise</div>
+                                <div class="hslv">10+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <a href="#about" class="scroll-ind" aria-label="Scroll to explore">
+            <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+            <span class="scroll-text">Scroll to explore</span>
+        </a>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="sp">
+        <div class="container">
+            <div class="ag">
+
+                <!-- Image stack -->
+                <div class="ais rv-left">
+                    <img class="aim" src="img/machine7.png" alt="Hanoch Automations engineering facility">
+                    <img class="ais2" src="img/machine2.png" alt="Hanoch Automations machine closeup">
+                    <div class="ab">
+                        <div class="bn">10+</div>
+                        <div class="bl">Years<br>Experience</div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="rv-right">
+                    <p class="slbl">About Us</p>
+                    <h2 class="stit">Welcome To <br><span class="grad-text">HANOCH AUTOMATIONS</span></h2>
+                    <p style="color:var(--text-m);margin-bottom:12px" class="rv">
+                        HANOCH Automations Pvt Ltd is driven by innovation, engineering excellence, and a commitment to
+                        delivering intelligent automation solutions for complex industrial challenges.
+                    </p>
+                    <p style="color:var(--text-m);margin-bottom:24px" class="rv">
+                        With a multidisciplinary team of experienced engineers and automation specialists, we provide
+                        complete turnkey automation systems &mdash; from concept design and engineering to installation,
+                        commissioning, and long-term technical support.
+                    </p>
+                    <div class="af">
+                        <div class="fi rv">
+                            <div class="fic"><img src="svg/01.svg" alt=""
+                                    style="width:24px;height:24px;filter:brightness(0) invert(1)"></div>
+                            <div>
+                                <h4>Special Purpose Machines (SPMs)</h4>
+                                <p>Precision-Engineered. Application-Specific. Performance-Driven.</p>
+                            </div>
+                        </div>
+                        <div class="fi rv">
+                            <div class="fic"><img src="svg/02.svg" alt=""
+                                    style="width:24px;height:24px;filter:brightness(0) invert(1)"></div>
+                            <div>
+                                <h4>Industrial IoT (IIoT) Solutions</h4>
+                                <p>Transforming Machines into Intelligent, Connected Systems.</p>
+                            </div>
+                        </div>
+                        <div class="fi rv">
+                            <div class="fic"><img src="svg/03.svg" alt=""
+                                    style="width:24px;height:24px;filter:brightness(0) invert(1)"></div>
+                            <div>
+                                <h4>Marine &amp; Ship Automation Solutions</h4>
+                                <p>Robust Automation for Maritime Environments.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.hanoch.in/about" class="btn-p rv">Explore More <i
+                            class="fas fa-arrow-right-long"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services" class="sp">
+        <div class="container">
+            <div class="sh">
+                <div>
+                    <p class="slbl rv">Services We Offer</p>
+                    <h2 class="stit rv">Our Core Services</h2>
+                </div>
+                <a href="https://www.hanoch.in/service" class="btn-o rv">View All Services <i
+                        class="fas fa-arrow-right-long"></i></a>
+            </div>
+            <div class="sgrid">
+
+                <div class="sc2 rv" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                    <div class="sciw"><img class="sci" src="img/machine1.png" alt="Special Purpose Machine"></div>
+                    <div class="scb">
+                        <h4>Special Purpose Machines (SPMs)</h4>
+                        <p>Custom-designed automated machines tailored to specific production needs with maximum
+                            efficiency and precision.</p>
+                        <a href="https://www.hanoch.in/service-details" class="brm">Read More <i
+                                class="fas fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+
+                <div class="sc2 rv" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                    <div class="sciw"><img class="sci" src="img/machine2.png" alt="Industrial IoT Solutions"></div>
+                    <div class="scb">
+                        <h4>Industrial IoT Solutions</h4>
+                        <p>Connected sensors and smart analytics to optimize equipment performance and enable predictive
+                            maintenance.</p>
+                        <a href="https://www.hanoch.in/service-details" class="brm">Read More <i
+                                class="fas fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+
+                <div class="sc2 rv" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                    <div class="sciw"><img class="sci" src="img/machine3.png" alt="Marine Automation"></div>
+                    <div class="scb">
+                        <h4>Marine Automation Solutions</h4>
+                        <p>Advanced automation systems for vessel control, navigation monitoring and onboard power
+                            management.</p>
+                        <a href="https://www.hanoch.in/service-details2" class="brm">Read More <i
+                                class="fas fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+
+                <div class="sc2 rv" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                    <div class="sciw"><img class="sci" src="img/machine4.png" alt="Robotics Integration"></div>
+                    <div class="scb">
+                        <h4>Robotics Integration Services</h4>
+                        <p>Design and integration of robotic cells for assembly, welding, material handling and
+                            inspection operations.</p>
+                        <a href="https://www.hanoch.in/service-details" class="brm">Read More <i
+                                class="fas fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+
+                <div class="sc2 rv" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                    <div class="sciw"><img class="sci" src="img/machine5.png" alt="Vision Inspection Systems"></div>
+                    <div class="scb">
+                        <h4>Vision Inspection Systems</h4>
+                        <p>Machine-vision solutions for automated quality inspection, dimensional measurement and defect
+                            detection.</p>
+                        <a href="https://www.hanoch.in/service-details" class="brm">Read More <i
+                                class="fas fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+
+                <div class="sc2 rv" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                    <div class="sciw"><img class="sci" src="img/machine8.png" alt="Machinery Monitoring"></div>
+                    <div class="scb">
+                        <h4>Machinery Monitoring Solution</h4>
+                        <p>Real-time monitoring and predictive maintenance platforms for critical industrial equipment
+                            and production lines.</p>
+                        <a href="https://www.hanoch.in/service-details" class="brm">Read More <i
+                                class="fas fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ACHIEVEMENTS ========== -->
+    <section id="ach" class="sp">
+        <div class="achbg"></div>
+        <div class="container">
+            <div class="achi">
+
+                <div class="achc">
+                    <p class="slbl rv">Talk To Us</p>
+                    <h2 class="stit rv">Powering the Future<br>with <span class="grad-text">Innovation</span></h2>
+                    <p class="desc rv">A decade of engineering excellence &mdash; delivering intelligent automation that
+                        transforms industrial operations and enables the factories of tomorrow.</p>
+                    <a href="https://www.hanoch.in/contact" class="btn-p rv">Contact Us Today <i
+                            class="fas fa-arrow-right-long"></i></a>
+                </div>
+
+                <div class="cg2">
+                    <div class="cc rv-scale" data-tilt data-tilt-max="6" data-tilt-speed="400">
+                        <div class="ci"><i class="fas fa-medal"></i></div>
+                        <div class="cn" data-target="10" data-suffix="+">0</div>
+                        <div class="clb">Years of Expertise</div>
+                    </div>
+                    <div class="cc rv-scale" data-tilt data-tilt-max="6" data-tilt-speed="400">
+                        <div class="ci"><i class="fas fa-industry"></i></div>
+                        <div class="cn" data-target="250" data-suffix="+">0</div>
+                        <div class="clb">Machines Delivered</div>
+                    </div>
+                    <div class="cc rv-scale" data-tilt data-tilt-max="6" data-tilt-speed="400">
+                        <div class="ci"><i class="fas fa-globe"></i></div>
+                        <div class="cn" data-target="50" data-suffix="+">0</div>
+                        <div class="clb">Global Clients</div>
+                    </div>
+                    <div class="cc rv-scale" data-tilt data-tilt-max="6" data-tilt-speed="400">
+                        <div class="ci"><i class="fas fa-star"></i></div>
+                        <div class="cn" data-target="100" data-suffix="%">0</div>
+                        <div class="clb">Client Satisfaction %</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section id="proj" class="sp">
+        <div class="container">
+            <div class="ph">
+                <p class="slbl rv" style="justify-content:center">Our Portfolio</p>
+                <h2 class="stit rv" style="text-align:center">Featured Projects</h2>
+                <p class="ssub rv" style="text-align:center;margin:0 auto">
+                    Showcasing our most impactful industrial automation projects across manufacturing and maritime
+                    industries.
+                </p>
+            </div>
+            <div class="pgrid">
+
+                <div class="pc2 rv">
+                    <img src="img/machine9.png" alt="Marine Automation project">
+                    <div class="po">
+                        <div class="pcat">Marine Industry</div>
+                        <h4>Marine Automation Solutions</h4>
+                        <a href="https://www.hanoch.in/service-details2" class="parr"><i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="pc2 rv">
+                    <img src="img/machine4.png" alt="Robotics project">
+                    <div class="po">
+                        <div class="pcat">Robotics</div>
+                        <h4>Robotics Integration Services</h4>
+                        <a href="https://www.hanoch.in/service-details" class="parr"><i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="pc2 rv">
+                    <img src="img/machine5.png" alt="Vision Inspection project">
+                    <div class="po">
+                        <div class="pcat">Quality Control</div>
+                        <h4>Vision Inspection Systems</h4>
+                        <a href="https://www.hanoch.in/service-details" class="parr"><i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="pc2 rv">
+                    <img src="img/machine1.png" alt="SPM project">
+                    <div class="po">
+                        <div class="pcat">Manufacturing</div>
+                        <h4>Special Purpose Machines</h4>
+                        <a href="https://www.hanoch.in/service-details" class="parr"><i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="pc2 rv">
+                    <img src="img/machine2.png" alt="IoT project">
+                    <div class="po">
+                        <div class="pcat">Industry 4.0</div>
+                        <h4>Industrial IoT Solutions</h4>
+                        <a href="https://www.hanoch.in/service-details" class="parr"><i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section id="cta" class="sp">
+        <div class="container">
+            <div class="ctac rv-scale" data-tilt data-tilt-max="3" data-tilt-speed="600">
+                <p class="slbl" style="justify-content:center;margin-bottom:18px">Let&rsquo;s Work Together</p>
+                <h2 class="stit" style="text-align:center;margin-bottom:14px">
+                    Ready to Automate<br>Your <span class="grad-text">Future?</span>
+                </h2>
+                <p class="desc">
+                    Partner with Hanoch Automations to unlock the full potential of intelligent automation. From concept
+                    to commissioning &mdash; we&rsquo;re with you every step of the way.
+                </p>
+                <div class="ctabt">
+                    <a href="https://www.hanoch.in/contact" class="btn-p">Get A Free Quote <i
+                            class="fas fa-arrow-right-long"></i></a>
+                    <a href="tel:+919400375496" class="btn-o"><i class="fas fa-phone"></i> +91 94003 75496</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <!-- Contact bar -->
+        <div class="fcb">
+            <div class="fci">
+                <div class="fcic"><i class="fas fa-phone"></i></div>
+                <div>
+                    <div class="fclb">Call Us 24/7</div>
+                    <div class="fclv"><a href="tel:+919400375496">+91 94003 75496</a></div>
+                </div>
+            </div>
+            <div class="fci">
+                <div class="fcic"><i class="fas fa-envelope"></i></div>
+                <div>
+                    <div class="fclb">Email Us</div>
+                    <div class="fclv"><a href="mailto:info@hanoch.in">info@hanoch.in</a></div>
+                </div>
+            </div>
+            <div class="fci">
+                <div class="fcic"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                    <div class="fclb">Location</div>
+                    <div class="fclv">Kinfra EMC, Kochi, Kerala</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main footer -->
+        <div class="fm">
+            <div class="container">
+                <div class="fg">
+                    <div class="fb">
+                        <div class="flt"><img src="svg/white-logo.svg" alt="Hanoch Automations"
+                                style="height:40px;width:auto;filter:brightness(0) invert(1)"></div>
+                        <p>Looking to upgrade your production systems or implement smart industrial monitoring? HANOCH
+                            Automations delivers end-to-end automation excellence.</p>
+                        <div class="sl2">
+                            <a href="https://www.hanoch.in/" class="slk" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.hanoch.in/" class="slk" aria-label="Twitter"><i
+                                    class="fab fa-x-twitter"></i></a>
+                            <a href="https://www.linkedin.com/company/hanoch-automations/" target="_blank" class="slk"
+                                aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/919400375496" target="_blank" class="slk" aria-label="WhatsApp"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="fc">
+                        <h4>Quick Links</h4>
+                        <ul class="fl">
+                            <li><a href="https://www.hanoch.in/about"><i class="fas fa-chevron-right"></i> About
+                                    Hanoch</a></li>
+                            <li><a href="https://www.hanoch.in/service"><i class="fas fa-chevron-right"></i> Our
+                                    Services</a></li>
+                            <li><a href="#proj"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                            <li><a href="https://www.hanoch.in/contact"><i class="fas fa-chevron-right"></i> Contact
+                                    Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="fc">
+                        <h4>Services</h4>
+                        <ul class="fl">
+                            <li><a href="https://www.hanoch.in/service-details"><i class="fas fa-chevron-right"></i>
+                                    Special Purpose Machines</a></li>
+                            <li><a href="https://www.hanoch.in/service-details"><i class="fas fa-chevron-right"></i>
+                                    Industrial IoT (IIoT)</a></li>
+                            <li><a href="https://www.hanoch.in/service-details2"><i class="fas fa-chevron-right"></i>
+                                    Marine &amp; Ship Automation</a></li>
+                            <li><a href="https://www.hanoch.in/service-details"><i class="fas fa-chevron-right"></i>
+                                    Robotics &amp; Vision Systems</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer bottom -->
+        <div class="fbt">
+            <div class="container">
+                <div class="fbi">
+                    <p>&copy; 2026 <a href="https://www.hanoch.in/">Hanoch Automations Pvt Ltd</a>. All Rights Reserved.
+                    </p>
+                    <p>Designed &amp; Engineered with <span style="color:var(--primary)">&#9679;</span> in Kochi, Kerala
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button id="st" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Site Script -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
